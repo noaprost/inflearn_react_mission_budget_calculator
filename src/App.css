@@ -1,38 +1,157 @@
-.App {
+body {
+  background-color: plum;
+}
+
+.info {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 52px 16px;
+  border-radius: 8px;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.form label {
+  color: plum;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  outline: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.submit_btn {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: fit-content;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: plum;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.submit_btn:hover {
+  background-color: rgb(194, 100, 194);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit_btn p {
+  margin-right: 8px;
+}
+
+.list_main_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.list_container {
+  border: 1px solid lightgray;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.list_item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list_item * {
+  width: 100%;
+}
+
+.button_container * {
+  width: fit-content;
+  margin-right: 16px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.list_title {
+  color: plum;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 32px;
+}
+
+.list_delete_btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: plum;
+  color: white;
+  margin-top: 24px;
+}
+
+.list_delete_btn:hover {
+  background-color: rgb(194, 100, 194);
+  cursor: pointer;
+}
+
+.modify {
+  color: lightgreen;
+}
+
+.delete {
+  color: lightcoral;
+}
+
+.created {
+  background-color: rgb(46, 163, 46);
+  text-align: center;
+  width: 90%;
+  margin: 16px auto;
+  padding: 8px;
+  color: white;
+}
+
+.deleted {
+  background-color: rgb(228, 84, 84);
+  text-align: center;
+  width: 90%;
+  margin: 16px auto;
+  padding: 8px;
+  color: white;
+}
+
+.modified {
+  background-color: rgb(46, 163, 46);
+  text-align: center;
+  width: 90%;
+  margin: 16px auto;
+  padding: 8px;
+  color: white;
+}
+
+.total_money {
+  text-align: end;
+  width: 90%;
 }
